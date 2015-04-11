@@ -9,17 +9,18 @@ void main() {
 	do {
 		cout << "Inserte una cantidad entre 2 y 20: ";
 		cin >> lados;
-		if (lados<2 & lados >20)
+		if ((lados<2) || (lados >20))
 			cout << "Cantidad fuera de l\241mites. ";
-	} while (lados>=2 & lados <=20);
+	} while ((lados<2) || (lados>20));
 	for(i = 0; i<lados; i++){
-		if (i = 0 || i= lados-1){
+		if (i == 0 || i== lados-1){
 			for(j = 0; j<lados;j++)
 				cout << "*";
 		} else {
 			cout<<"*";
 			for(j = 0; j<(lados-2);j++)
-				cout " ";
+				cout << " ";
+			cout << "*";
 		}
 		cout << endl;
 	}
