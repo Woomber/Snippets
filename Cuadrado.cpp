@@ -15,12 +15,12 @@ void main() {
 	for(i = 0; i<lados; i++){
 		if (i == 0 || i== lados-1){
 			for(j = 0; j<lados;j++)
-				cout << "*";
+				cout << " *";
 		} else {
-			cout<<"*";
+			cout<<" *";
 			for(j = 0; j<(lados-2);j++)
-				cout << " ";
-			cout << "*";
+				cout << "  ";
+			cout << " *";
 		}
 		cout << endl;
 	}
