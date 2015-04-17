@@ -15,15 +15,14 @@ void main() {
 	for(i = 0; i<lados; i++){
 		if (i == 0 || i== lados-1){
 			for(j = 0; j<lados;j++)
-				cout << " *";
+				cout << "O";
 		} else {
-			cout<<" *";
+			cout<<"O";
 			for(j = 0; j<(lados-2);j++)
-				cout << "  ";
-			cout << " *";
+				cout << " ";
+			cout << "O";
 		}
 		cout << endl;
 	}
 	system("pause");
 }
-				
