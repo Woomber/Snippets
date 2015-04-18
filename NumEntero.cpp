@@ -20,4 +20,6 @@ void main() {
 			cout << "El n\243mero " << inpf << " es entero.";
 		}
 	}while(inpf != 0);
+	cout << endl << "Gracias por usar el programa." << endl;
+	system("pause");
 }

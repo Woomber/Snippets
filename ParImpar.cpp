@@ -18,4 +18,6 @@ void main() {
 			cout << "El n\243mero " << input << " es IMPAR.";
 		}
 	} while(input != 0);
+	cout << endl << "Gracias por usar el programa." << endl;
+	system("pause");
 }

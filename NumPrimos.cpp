@@ -30,4 +30,6 @@ void main() {
 			cout << "El n\243mero " << input << " es primo." << endl;
 		}
 	}while(input!=-1);
+	cout << endl << "Gracias por usar el programa." << endl;
+	system("pause");
 }
