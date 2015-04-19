@@ -5,7 +5,7 @@ using namespace std;
 
 void main() {
 	int lados, i, j;
-	cout << "Bienvenido al programa que traza en asteriscos un cuadrado con lado de entre 2 y 20 unidades." << endl << "Creado por Yael Arturo Chavoya Andal\242n." << endl << endl;
+	cout << "Bienvenido al programa que traza un cuadrado con lado de entre 2 y 20 unidades." << endl << "Creado por Yael Arturo Chavoya Andal\242n." << endl << endl;
 	do {
 		cout << "Inserte una cantidad entre 2 y 20: ";
 		cin >> lados;
