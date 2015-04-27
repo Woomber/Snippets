@@ -1,4 +1,4 @@
-// Ejercicio 1: Calcular el promedio de 3 alumnos diferentes
+// Ejercicio 1: Calcular el promedio de 3 alumnos diferentes con while
 
 #include "stdafx.h"
 #include "iostream"
@@ -7,7 +7,7 @@ using namespace std;
 
 void main()
 {
-	int i;
+	int i=0;
 	float prom[] = {0,0,0};
 
 	cout << "Bienvenido al programa que revisa promedios." << endl << "Creado por Yael Arturo Chavoya Andal\242n." << endl << endl << "Escriba el primer promedio: ";
