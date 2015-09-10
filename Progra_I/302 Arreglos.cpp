@@ -34,7 +34,7 @@ void main() {
 	float prom[10];
 	float totales[5];
 	float aumentos[5];
-	float resultados[2];
+	float resultados[2] = {0,0};
 	int i = 0;
 	
 	cout << "Bienvenido al programa que calcula promedios, totales de ventas y aumentos de sueldos." << endl << endl << "PROMEDIOS:"<< endl;
@@ -53,6 +53,7 @@ void main() {
 	cout << endl << "El promedio es de: " << resultados[1] << endl;
 
 	//Comisiones
+	cout << endl << endl << "COMISIONES:"<< endl;
 	resultados[0] = 0;
 	for(i=0;i<5;i++) {
 		cout << "Escriba la ganancia de " << mes(i) << ": ";
@@ -64,6 +65,7 @@ void main() {
 	cout << "Esto da un total de $" << resultados[0]*1.08 << "." << endl << endl;
 
 	//Aumentos
+	cout << endl << endl << "AUMENTOS:"<< endl;
 	for(i=0;i<5;i++){
 		cout << "Escriba el sueldo " << i+1 << ": ";
 			cin >> aumentos[i];

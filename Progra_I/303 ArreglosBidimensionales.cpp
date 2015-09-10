@@ -40,14 +40,14 @@ string beca(float n){
 	else return "n/a";
 }
 
-string aumstr(float n) {
-			if (n <=3500) return "3.4%";
-			else if (n>3500 && n <= 4800) return "2.8%";
-			else if (n>4800 && n <= 6000) return "1.8%";
-			else return "0%";
+string aumstr(double n) {
+			if (n <=3500) { return "3.4%";}
+			else if (n>3500 && n <= 4800) {return "2.8%";}
+			else if (n>4800 && n <= 6000) {return "1.8%";}
+			else {return "0%";}
 }
 
-double aumnum(float n) {
+double aumnum(double n) {
 			if (n <=3500) return n*1.034;
 			else if (n>3500 && n <= 4800) return n*1.028;
 			else if (n>4800 && n <= 6000) return n*1.018;
@@ -106,10 +106,10 @@ void totalvts(){
 
 	//TABLA DE RESULTADOS
 	resultado = 0;
-	cout << endl << "VENDEDOR\tTOTAL VTS\tCOMISION\tGANANCIA\tTOTAL FINAL" << endl;
+	cout << endl << "VENDEDOR\tSUBTOTAL\tCOMISION\tGANANCIA\tTOTAL" << endl;
 	for(i=0;i<5;i++) {
 		resultado = ::atof(vts[i][2].c_str())*::atof(vts[i][1].c_str())/100;
-		cout << vts[i][0] << "\t$" << vts[i][1] << "\t" << vts[i][2] << "%\t$" << resultado << "\t$" << ::atof( vts[i][1].c_str() ) + resultado << endl;
+		cout << vts[i][0] << "\t\t$" << vts[i][1] << "\t\t" << vts[i][2] << "%\t\t$" << resultado << "\t\t$" << ::atof( vts[i][1].c_str() ) + resultado << endl;
 	}
 }
 
@@ -125,9 +125,9 @@ void aumento(){
 	}
 
 	//TABLA DE RESULTADOS
-	cout << endl << "EMPLEADO\tSUELDO ACTUAL\tAUMENTO\tSUELDO NUEVO" << endl;
+	cout << endl << "EMPLEADO\tACTUAL\tAUMENTO\tNUEVO" << endl;
 	for(i=0;i<5;i++) {
-		cout << aum[i][0] << "\t$" << aum[i][1] << "\t" << aumstr( ::atof(aum[i][2].c_str()) ) << "\t$" << aumnum( ::atof(vts[i][1].c_str()) ) << endl;
+		cout << aum[i][0] << "\t\t$" << aum[i][1] << "\t" << aumstr( ::atof(aum[i][1].c_str()) ) << "\t$" << aumnum( ::atof(aum[i][1].c_str()) ) << endl;
 	}
 }
 

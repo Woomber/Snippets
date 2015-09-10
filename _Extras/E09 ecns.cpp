@@ -30,7 +30,7 @@ char abc(int n) {
 	return 'Z';
 }
 
-string mostrar(n) {
+string mostrar(int n) {
 	if (n<0) return "- " + n*-1;
 	else return "+ " + n;
 }
@@ -48,7 +48,7 @@ void dos() {
 			do {
 				read = 0;
 				cout << "Elija la forma que describe su ecuaci\242n: " << endl << "1: Ax + By + C = 0" << endl << "2: Ax + By = C" << endl << endl << "> ";
-				cin read;
+				cin >> read;
 				if (read == 1) iszero[i] = true;
 				else if (read == 2) iszero[i] = false;
 				else cout << "Opci\242n inv\240lida." << endl << endl;
