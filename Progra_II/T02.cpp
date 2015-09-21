@@ -27,7 +27,10 @@ int main() {
 		switch(sel){
 			case 0: salir(); break;
 			case 1: portada(); break;
-			case 2: cout << "Por favor inserte dos n\243meros a sumar: "; cin >> a >> b; cout << "La respuesta es : " << suma(a, b); break;
+			case 2: cout << "Por favor inserte dos n\243meros a sumar: ";
+					cin >> a >> b;
+					cout << "La respuesta es: " << suma(a, b);
+					break;
 			case 3: organizar(MAX); break;
 			case 4: funcion(); break;
 			default: cout << "No se encontr\242 una opci\242n correspondiente."; break;
@@ -51,9 +54,9 @@ void portada(){
 		system("cls");
 	}
 	cout << " ";
-	for(int i = 0; i<54; i++){ cout << "="; }
-	cout << "\n|    PROGRAMA HECHO POR YAEL ARTURO CHAVOYA ANDALON    |\n ";
-	for(int i = 0; i<54; i++){ cout << "="; }
+	for(int i = 0; i<46; i++){ cout << "="; }
+	cout << "\n|    Centro de Ense\244anza T\202cnica Industrial    |\n ";
+	for(int i = 0; i<46; i++){ cout << "="; }
 	cout << "\n\nInformaci\242n del autor:\n";
 	for(int i = 0; i<9; i++){ cout << "="; }
 	cout << "\nNombre:\t\tYael Arturo Chavoya Andal\242n\nEmail:\t\tyaelchavoya@outlook.com\nTel\202fono:\t33 3964 0329\n";
