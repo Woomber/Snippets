@@ -6,11 +6,13 @@
 
 using namespace std;
 
+//Prototipos
 int suma(int a, int b);
 void portada();
 void organizar(int maxn);
 void funcion();
-void salir();
+void salir(); 
+void pause();
 
 const int MAX = 10;
 
@@ -35,9 +37,7 @@ int main() {
 			case 4: funcion(); break;
 			default: cout << "No se encontr\242 una opci\242n correspondiente."; break;
 		}
-	cout << "\n\nPresione enter para continuar...";	
-	cin.sync();
-	cin.get();
+	pause();
 	if(system("color")) system("color f");
 	} while(sel != 0);
 	return 0;
@@ -131,4 +131,11 @@ void funcion() {
 
 void salir() {
 	cout << "\nGracias por utilizar mi programa.";
+}
+
+void pause(){
+		cout << "\nPresione ENTER para continuar...";
+		cin.sync();
+		cin.get();
+		return;
 }

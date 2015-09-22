@@ -5,7 +5,7 @@ Por Yael Arturo Chavoya Andalón
 
 //Prototipos
 void clear(); // Limpia la pantalla si es posible
-void pause(bool forceEnter); // Pausa la pantalla, intentado usar "system("pause");", usando como alternativa "cin.get();" a menos que el argumento sea verdadero
+void pause(); // Pausa la pantalla, intentado usar "system("pause");", usando como alternativa "cin.get();" a menos que el argumento sea verdadero
 void portada(); // Muestra una portada con información del autor y del programa
 int read(); // Convierte la parte numérica de una cadena a un entero. Requiere <string>
 void toggle(bool &boolean); // Cambia verdadero a falso y falso a verdadero
@@ -20,22 +20,11 @@ void clear(){
 	return;
 }
 
-void pause(bool forceEnter){
-	if (forceEnter) {
+void pause(){
 		cout << "\nPresione ENTER para continuar...";
 		cin.sync();
 		cin.get();
-	} else {
-		if (system("pause")) {
-			system("pause");
-		}
-		else {
-			cout << "\nPresione ENTER para continuar...";
-			cin.sync();
-			cin.get();
-		}
-	}
-	return;
+		return;
 }
 
 void portada(){
