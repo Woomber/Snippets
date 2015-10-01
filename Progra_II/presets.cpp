@@ -7,9 +7,9 @@ Por Yael Arturo Chavoya Andalón
 void clear(); // Limpia la pantalla si es posible
 void pause(); // Pausa la pantalla, intentado usar "system("pause");", usando como alternativa "cin.get();" a menos que el argumento sea verdadero
 void portada(); // Muestra una portada con información del autor y del programa
-int read(); // Convierte la parte numérica de una cadena a un entero. Requiere <string>
-void toggle(bool &boolean); // Cambia verdadero a falso y falso a verdadero
-void line(int length); // Crea una línea de tamaño length
+void leer(int &); // Convierte la parte numérica de una cadena a un entero. Requiere <string> y <cstdlib>
+void toggle(bool &); // Cambia verdadero a falso y falso a verdadero
+void line(int); // Crea una línea de tamaño del parámetro
 
 //Funciones
 void clear(){
@@ -39,7 +39,7 @@ void portada(){
 	for(int i = 0; i<46; i++){ cout << "="; }
 	cout << "\n\nInformaci\242n del autor:\n";
 	for(int i = 0; i<9; i++){ cout << "="; }
-	cout << "\nNombre:\t\tYael Arturo Chavoya Andal\242n\nEmail:\t\tyaelchavoya@outlook.com\nTel\202fono:\t33 3964 0329\n";
+	cout << "\nNombre:\t\tYael Arturo Chavoya Andal\242n\nEmail:\t\tyaelchavoya@outlook.com\nCarrera:\tDesarrollo de Software\n";
 	cout << "Grupo:\t\t3B\nRegistro:\t14300094\n\n\nInformaci\242n del programa:\n";
 	for(int i = 0; i<9; i++){ cout << "="; }
 
@@ -48,8 +48,8 @@ void portada(){
 	/* Título */ cout << "Las funciones en C++";
 	cout << "\nObjetivo:\t";
 	/* Objetivo */ cout << "Aprender a hacer funciones con y sin retorno en C++";
-	cout << "\nNo.:\t\t";
-	/* Número de práctica o tarea */ cout << "1";
+	cout << "\nMateria:\t";
+	/* Número de práctica o tarea */ cout << "Programaci\242n II";
 	cout << "\nParcial:\t";
 	/* Parcial */ cout << "1";
 	cout << "\nFecha:\t\t";
@@ -57,10 +57,11 @@ void portada(){
 	cout << endl;	
 }
 
-int read(){
-	string n = "";
+void leer(int &res){
+	string n;
 	cin >> n;
-	return ::atoi( n.c_str() ); //Convierte una cadena a un entero
+	res = ::atoi( n.c_str() );
+	return; //Convierte una cadena a un entero
 }
 
 void toggle(bool &boolean){
