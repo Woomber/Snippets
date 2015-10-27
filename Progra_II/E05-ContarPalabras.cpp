@@ -1,4 +1,4 @@
-//Yael Chavoya
+//Programa para contar palabras por Yael Chavoya
 #include "stdafx.h"
 #include "iostream"
 

@@ -1,3 +1,4 @@
+//Programa para calcular el promedio de máximo 20 números por Yael Chavoya
 #include <stdafx.h>
 #include <iostream>
 
